@@ -1,0 +1,6 @@
+<RCC>
+    <qresource prefix="/resource/icon">
+        <file>Actions-transform-rotate.ico</file>
+        <file>Actions-transform-rotate 48x48.ico</file>
+    </qresource>
+</RCC>

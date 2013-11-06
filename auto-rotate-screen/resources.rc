@@ -1,0 +1,22 @@
+#include <winver.h>
+ARS_APS_ICON ICON DISCARDABLE "Actions-transform-rotate.ico"
+
+VS_VERSION_INFO VERSIONINFO
+FILEVERSION    0,4,1,0
+PRODUCTVERSION 0,4,1,0
+FILETYPE VFT_APP
+{
+  BLOCK "StringFileInfo"
+	 {
+		 BLOCK "040904E4"
+		 {
+			 VALUE "LegalCopyright", "2012,2013 Yeo Kheng Meng (yeokm1@yahoo.com.sg)"
+			 VALUE "ProductName", "AutoRotateScreen using APS v0.41"
+			 VALUE "ProductVersion", "0.41"
+		 }
+	 }
+  BLOCK "VarFileInfo"
+	 {
+		 VALUE "Translation", 0x0409, 1252 //language codes
+	 }
+}

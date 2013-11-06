@@ -1,0 +1,12 @@
+INPUT(
+./debug\WinOSFunctions.o
+./debug\WinOSApsSensor.o
+./debug\Settings.o
+./debug\DiskStoring.o
+./debug\Logic.o
+./debug\Main.o
+./debug\MainWindow.o
+./debug\moc_Logic.o
+./debug\moc_MainWindow.o
+./debug\qrc_res.o
+);

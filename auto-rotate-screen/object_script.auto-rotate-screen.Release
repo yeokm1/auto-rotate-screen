@@ -1,0 +1,12 @@
+INPUT(
+./release\WinOSFunctions.o
+./release\WinOSApsSensor.o
+./release\Settings.o
+./release\DiskStoring.o
+./release\Logic.o
+./release\Main.o
+./release\MainWindow.o
+./release\moc_Logic.o
+./release\moc_MainWindow.o
+./release\qrc_res.o
+);
