@@ -3,6 +3,9 @@ Auto Rotate Screen using APS
 
 Originally posted on Sourceforge  http://sourceforge.net/projects/autoscreenrotat/
 
+![Screen](https://raw.github.com/yeokm1/auto-rotate-screen/blob/master/screenshots/ARS%20v41.PNG)
+
+
 Using the sensor data provided by the Active Protection System, the program will auto rotate the screen to the desired orientation.
 
 Although IBM/Lenovo has an official software that does exactly this, it does not work for the non-tablet versions. This program differs from the official one in that it allows the user to customise the exact laptop orientation for the rotation to kick in. You can also individually select which orientation to activate or deactivate.
