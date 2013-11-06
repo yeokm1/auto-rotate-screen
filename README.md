@@ -3,7 +3,7 @@ Auto Rotate Screen using APS
 
 Originally posted on Sourceforge  http://sourceforge.net/projects/autoscreenrotat/
 
-![Screen](https://raw.github.com/yeokm1/auto-rotate-screen/blob/master/screenshots/ARS%20v41.PNG)
+![Screen](http://s3-ap-southeast-1.amazonaws.com/media.yeokhengmeng.com/screenshots/ARS+v41.PNG)
 
 
 Using the sensor data provided by the Active Protection System, the program will auto rotate the screen to the desired orientation.
