@@ -45,6 +45,7 @@ If there is any abnormal behavoir, press the ESC key to disable AutoRotation.
 Rate Settings:
 
 Sensor Poll Rate: Defines how often AutoRotateScreen will poll the sensor for new accelerometer data.
+
 Screen Delay Rate: How long AutoRotateScreen will wait for before rotating to the new display orientation
 
 ------------------------------
@@ -52,20 +53,25 @@ Screen Delay Rate: How long AutoRotateScreen will wait for before rotating to th
 Rotation Method Settings:
 
 Native OS: Uses the Win32 API ChangeDisplaySettings() to rotate the screen
+
 Keyboard shortcut: AutoRotateScreen will issue the keystrokes to rotate the screen
 
 Orient 0: Ctrl+ALT+UP
+
 Orient 1: Ctrl+ALT+LEFT
+
 Orient 2: Ctrl+ALT+RIGHT
+
 Orient 3: Ctrl+ALT+DOWN
 
 See limitation 3 below.
 
 ------------------------------
 Limitations:
+
 1. It is possible to set overlapping ranges during the calibration. Should your machine be within an overlapped range, the screen orientation will switch back and forth between the affected orientations. Just take care to avoid this issue during calibration. My program will issue a warning, but it is up to you to decide whether to still accept the calibration.
 
-2. THe APS sensor is only a 2-axis device. This means that 2 laptop positions can have the same x and y values, eg. flat up, and directly upside down. Again, there's is no way for me to program around this. Just be aware when calibrating.
+2. The APS sensor is only a 2-axis device. This means that 2 laptop positions can have the same x and y values, eg. flat up, and directly upside down. Again, there's is no way for me to program around this. Just be aware when calibrating.
 
 3. On some systems, the graphics card driver may not support the native Win32 Rotation. In that case, you can try the keyboard shortcut method. AutoRotateScreen will issue the keystrokes listed above.
 
@@ -76,6 +82,7 @@ It interfaces natively with the graphics driver to rotate the screen. It accepts
 ------------------------------
 
 For non-Thinkpad machines:
+
 This program can will simply act as a screen orientation shortcut on the system tray. Several warning messages will show during launch. Use the commandline arguments given below to suppress those warnings. Once suppressed, one can use the tray menu to select the desired screen rotation on the fly.
 
 
@@ -87,18 +94,26 @@ http://windows.microsoft.com/en-us/windows7/Schedule-a-task
 CommandLine Arguments:
 
 /s : To suppress missing sensor.dll warning
+
 /r : To suppress missing/corrupted ars-config.ini file warning
+
 /m : Always start minimised to tray area. (Useful for non-calibrated/non-Thinkpads)
+
 /a : Disable Auto Rotation on program start (default is enabled if program is calibrated)
+
 
 ------------------------------
 
 ars-config.ini format:
 
 Orient0: MinX MaxX MinY MaxY enable
+
 .
+
 .
+
 .
+
 RotationMethod PollRate ScreenDelayRate
 
 To reset program, just delete this file and start calibration from scratch.
@@ -106,38 +121,67 @@ To reset program, just delete this file and start calibration from scratch.
 ------------------------------
 
 Changelog:
+
 v0.1 (8 June 2012)
+
 Initial release
 
+
+
 v0.2 (8 June 2012)
+
 Added commandline argument to allow disable auto rotation on program start
+
 Added commandline argument to customise polling rate
 
+
 v0.3 (24 June 2012)
+
 Left click on tray icon also brings up program
+
 Reduced confusion on Auto-Rotation option in tray menu
+
 Prevent multiple instances of the same program
+
 Range of poll rate limited from 20ms to 90000000ms
+
 Allow individual display orientation to be deselected
+
 Improve screen orientation delay algorithm
+
 Press ESC key to disable autorotation (during abnormal behavior)
-Warn if overlapping ranges encountered			
+
+Warn if overlapping ranges encountered	
+
 		
 v0.31 (27 June 2012)
+
 Corrected bug that enables to save config data even for non-APS enabled machines
+
 Adjusted custom message values to make all above 1024
 
 v0.4 (1 Jan 2013)
+
 Ported to C++11 and QT 4.8.4
+
 Added easier adjustments of poll/delay rate
+
 2 ways of rotating, using native Win32 APIs or keyboard shortcuts
 
+
 v0.41 (2 Jan 2013)
+
 Allow change of poll rate on the fly
-Inform user of next launch minimise to system tray after first successful calibration               
+
+Inform user of next launch minimise to system tray after first successful calibration
+
 Renamed Win32 rotation label to OS rotation
+
 Added Settings help to About/Help
-Corrected bug where during calibrating shows the wrong calibration orientation value                 
+
+Corrected bug where during calibrating shows the wrong calibration orientation value  
+
+------------------------------
 
 Credits:
 1. Programming Windows 5th Edition by Charles Petzold
@@ -166,8 +210,12 @@ If I miss out any credits, please feel free to inform me Yeo Kheng Meng at yeokm
 ------------------------------
 
 Last Build Date: 2 Jan 2013
+
 Compiler: MinGW GCC 4.7.2 with QT Creator 2.6.1
+
 Language: C++11 with QT 4.8.4
 
+
 Copyright 2012,2013 Yeo Kheng Meng (yeokm1@yahoo.com.sg)
+
 Licensed under the MIT license
