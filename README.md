@@ -45,6 +45,7 @@ If there is any abnormal behavoir, press the ESC key to disable AutoRotation.
 Rate Settings:
 
 Sensor Poll Rate: Defines how often AutoRotateScreen will poll the sensor for new accelerometer data.
+
 Screen Delay Rate: How long AutoRotateScreen will wait for before rotating to the new display orientation
 
 ------------------------------
@@ -63,9 +64,10 @@ See limitation 3 below.
 
 ------------------------------
 Limitations:
+
 1. It is possible to set overlapping ranges during the calibration. Should your machine be within an overlapped range, the screen orientation will switch back and forth between the affected orientations. Just take care to avoid this issue during calibration. My program will issue a warning, but it is up to you to decide whether to still accept the calibration.
 
-2. THe APS sensor is only a 2-axis device. This means that 2 laptop positions can have the same x and y values, eg. flat up, and directly upside down. Again, there's is no way for me to program around this. Just be aware when calibrating.
+2. The APS sensor is only a 2-axis device. This means that 2 laptop positions can have the same x and y values, eg. flat up, and directly upside down. Again, there's is no way for me to program around this. Just be aware when calibrating.
 
 3. On some systems, the graphics card driver may not support the native Win32 Rotation. In that case, you can try the keyboard shortcut method. AutoRotateScreen will issue the keystrokes listed above.
 
@@ -76,6 +78,7 @@ It interfaces natively with the graphics driver to rotate the screen. It accepts
 ------------------------------
 
 For non-Thinkpad machines:
+
 This program can will simply act as a screen orientation shortcut on the system tray. Several warning messages will show during launch. Use the commandline arguments given below to suppress those warnings. Once suppressed, one can use the tray menu to select the desired screen rotation on the fly.
 
 
